@@ -58,5 +58,6 @@ RUN rm /model_fetcher.py
 ADD src .
 
 ENV RUNPOD_DEBUG_LEVEL=INFO
+ENV RUNPOD_TRACE=1
 
 CMD python -u /rp_handler.py --model_tag="$MODEL_TAG"
